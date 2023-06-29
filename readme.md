@@ -21,10 +21,16 @@ With this requests :
 
 
 ### consemeFeign
-
+* Is a spring app that runs on localhost on port 8081 with the help of DB H2.
+* Using openFeign this app is responsible for making rest requests to the personFeign app and using the data.
 
 ## Documentation:
  * [OpenFeign link 1](https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/)
  * [OpenFeign link 2](https://spring.io/projects/spring-cloud-azure)
  * [Hexagonal Architecture link 1](https://medium.com/ssense-tech/hexagonal-architecture-there-are-always-two-sides-to-every-story-bc0780ed7d9c)
  * [Hexagonal Architecture link 2](https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749)
+
+
+## Next Steps: 
+* put apps running in Docker
+* the consemeFeign app saves and changes data received from personFeign
