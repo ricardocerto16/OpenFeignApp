@@ -12,7 +12,19 @@ With this requests :
 * Find All Photos: https://jsonplaceholder.typicode.com/photos/
 * Find Photo By Id: https://jsonplaceholder.typicode.com/photos/1
 
+## Description personFeign & consemeFeign:
+
+### personFeign: 
+* Is a spring app that runs on localhost on port 8080 with the help of DB H2.
+* For this app we adopted a hexagonal architecture (help links in the documentation topic
+* The exampleData.txt file that is in the resources already has some inserts in the table to be tested
+
+
+### consemeFeign
+
 
 ## Documentation:
- * https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/
- * https://spring.io/projects/spring-cloud-azure
+ * [OpenFeign link 1]https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/
+ * [OpenFeign link 2]https://spring.io/projects/spring-cloud-azure
+ * [Hexagonal Architecture link 1]https://medium.com/ssense-tech/hexagonal-architecture-there-are-always-two-sides-to-every-story-bc0780ed7d9c
+ * [Hexagonal Architecture link 2]https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749
