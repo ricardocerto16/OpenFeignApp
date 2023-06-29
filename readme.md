@@ -24,7 +24,7 @@ With this requests :
 
 
 ## Documentation:
- * [OpenFeign link 1]https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/
- * [OpenFeign link 2]https://spring.io/projects/spring-cloud-azure
- * [Hexagonal Architecture link 1]https://medium.com/ssense-tech/hexagonal-architecture-there-are-always-two-sides-to-every-story-bc0780ed7d9c
- * [Hexagonal Architecture link 2]https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749
+ * [OpenFeign link 1](https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/)
+ * [OpenFeign link 2](https://spring.io/projects/spring-cloud-azure)
+ * [Hexagonal Architecture link 1](https://medium.com/ssense-tech/hexagonal-architecture-there-are-always-two-sides-to-every-story-bc0780ed7d9c)
+ * [Hexagonal Architecture link 2](https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749)
