@@ -18,6 +18,7 @@ With this requests :
 * Is a spring app that runs on localhost on port 8080 with the help of DB H2.
 * For this app we adopted a hexagonal architecture (help links in the documentation topic
 * The exampleData.txt file that is in the resources already has some inserts in the table to be tested
+* Tests performed on Controller and Service using Mockito
 
 
 ### consemeFeign
