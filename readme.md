@@ -30,8 +30,10 @@ With this requests :
  * [OpenFeign link 2](https://spring.io/projects/spring-cloud-azure)
  * [Hexagonal Architecture link 1](https://medium.com/ssense-tech/hexagonal-architecture-there-are-always-two-sides-to-every-story-bc0780ed7d9c)
  * [Hexagonal Architecture link 2](https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749)
-
-
+ * [Unit tests with Mockito](https://www.vogella.com/tutorials/Mockito/article.html)
+ * [JUnit 5 tutorial - Learn how to write unit tests](https://www.vogella.com/tutorials/JUnit/article.html)
+ * [Integrate JUnit and Mockito, Unit Testing for Controller Layer](https://medium.com/backend-habit/integrate-junit-and-mockito-unit-testing-for-controller-layer-91bb4099c2a5)
+ 
 ## Next Steps: 
 * put apps running in Docker
 * the consemeFeign app saves and changes data received from personFeign
