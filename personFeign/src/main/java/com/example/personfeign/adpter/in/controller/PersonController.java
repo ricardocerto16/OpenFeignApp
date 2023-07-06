@@ -5,6 +5,7 @@ import com.example.personfeign.adpter.in.dto.response.PersonResponse;
 import com.example.personfeign.adpter.mapper.PersonMapper;
 import com.example.personfeign.core.model.PersonModel;
 import com.example.personfeign.core.port.in.PersonOperations;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -48,5 +49,17 @@ public class PersonController {
         return personMapper.toResponse(personOperations.save(personMapper.personRequestToPerson(personRequest)).get());
 
     }
+
+    @PutMapping("/{id}")
+    public PersonResponse updateById(@PathVariable Integer id, @RequestBody PersonRequest personRequest) throws Exception {
+
+
+        Optional<PersonModel> serviceResponse = personOperations.updateById(id, personMapper.personRequestToPerson(personRequest));
+
+        return personMapper.toResponse(serviceResponse.get());
+
+    }
+
+
 
 }

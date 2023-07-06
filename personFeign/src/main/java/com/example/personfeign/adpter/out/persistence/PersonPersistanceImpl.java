@@ -54,7 +54,10 @@ public class PersonPersistanceImpl implements PersonPersistance {
         Optional<PersonEntity> optionalPersonEntity = personRepository.findById(id);
 
         if (optionalPersonEntity.isPresent()) {
-            personModel = Optional.of(personMapper.personEntityToPerson(personRepository.save(personMapper.partialUpdate(updatePersonModel, optionalPersonEntity.get()))));
+            personMapper.partialUpdate(updatePersonModel, optionalPersonEntity.get());
+            optionalPersonEntity.get().setId(id);
+
+            personModel = Optional.of(personMapper.personEntityToPerson(personRepository.save(optionalPersonEntity.get())));
         }
 
         return personModel;
