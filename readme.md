@@ -30,10 +30,10 @@ With this requests :
 
 Swagger is a specification for documenting REST APIs. It describes the api format including URL, method, and representation to describe REST web services. Swagger is meant to enable the service producer to update the service documentation in real time so that client and documentation systems are moving at the same pace as the server. The methods, parameters, and models description are tightly integrated into the server code, thereby maintaining the synchronization in APIs and its documentation. The specification asks you to include information like:
 
-What are all the operations that your API supports?
-What are your API’s parameters and what does it return?
-Does your API need some authorization?
-And even fun things like terms, contact information and license to use the API.
+- What are all the operations that your API supports?
+- What are your API’s parameters and what does it return?
+- Does your API need some authorization?
+- And even fun things like terms, contact information and license to use the API.
 
 
 ## Documentation:
