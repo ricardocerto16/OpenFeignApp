@@ -35,7 +35,7 @@ Swagger is a specification for documenting REST APIs. It describes the api forma
 - Does your API need some authorization?
 - And even fun things like terms, contact information and license to use the API.
 
-  ### To integrate Swagger with Spring Boot we need to include the following maven dependencies in our pom.xml file.
+### To integrate Swagger with Spring Boot we need to include the following maven dependencies in our pom.xml file.
 ```
 <!-- swagger dependencies -->
 <dependency>
