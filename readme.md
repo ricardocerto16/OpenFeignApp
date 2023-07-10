@@ -4,6 +4,30 @@
 ## How does Feign work?
 Feign works by processing annotations into a templatized request. Arguments are applied to these templates in a straightforward fashion before output. Although Feign is limited to supporting text-based APIs, it dramatically simplifies system aspects such as replaying requests. Furthermore, Feign makes it easy to unit test your conversions knowing this.
 
+## What is Swagger
+
+Swagger is a specification for documenting REST APIs. It describes the api format including URL, method, and representation to describe REST web services. Swagger is meant to enable the service producer to update the service documentation in real time so that client and documentation systems are moving at the same pace as the server. The methods, parameters, and models description are tightly integrated into the server code, thereby maintaining the synchronization in APIs and its documentation. The specification asks you to include information like:
+
+- What are all the operations that your API supports?
+- What are your API’s parameters and what does it return?
+- Does your API need some authorization?
+- And even fun things like terms, contact information and license to use the API.
+
+### To integrate Swagger with Spring Boot we need to include the following maven dependencies in our pom.xml file.
+```
+<!-- swagger dependencies -->
+<dependency>
+	<groupId>org.springdoc</groupId>
+	<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+	<version>2.1.0</version>
+</dependency>
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
+```
+
+
 ## Description Simple App Feign:
 
 To consume an external api using spring openfeign we use the
@@ -27,28 +51,7 @@ With this requests :
 * Using openFeign this app is responsible for making rest requests to the personFeign app and using the data.
 * Swagger link: http://localhost:8081/swagger-ui/index.html#/  (The project needs to be running to access the link)
 
-## What is Swagger
 
-Swagger is a specification for documenting REST APIs. It describes the api format including URL, method, and representation to describe REST web services. Swagger is meant to enable the service producer to update the service documentation in real time so that client and documentation systems are moving at the same pace as the server. The methods, parameters, and models description are tightly integrated into the server code, thereby maintaining the synchronization in APIs and its documentation. The specification asks you to include information like:
-
-- What are all the operations that your API supports?
-- What are your API’s parameters and what does it return?
-- Does your API need some authorization?
-- And even fun things like terms, contact information and license to use the API.
-
-### To integrate Swagger with Spring Boot we need to include the following maven dependencies in our pom.xml file.
-```
-<!-- swagger dependencies -->
-<dependency>
-	<groupId>org.springdoc</groupId>
-	<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-	<version>2.1.0</version>
-</dependency>
-<dependency>
-	<groupId>org.springframework.boot</groupId>
-	<artifactId>spring-boot-starter-validation</artifactId>
-</dependency>
-```
 
 
 ## Documentation:
