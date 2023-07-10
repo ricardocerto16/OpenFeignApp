@@ -19,11 +19,22 @@ With this requests :
 * For this app we adopted a hexagonal architecture (help links in the documentation topic
 * The exampleData.txt file that is in the resources already has some inserts in the table to be tested
 * Tests performed on Controller and Service using Mockito
+* Swagger link: http://localhost:8080/swagger-ui/index.html#/
 
 
 ### consemeFeign
 * Is a spring app that runs on localhost on port 8081 with the help of DB H2.
 * Using openFeign this app is responsible for making rest requests to the personFeign app and using the data.
+
+## What is Swagger
+
+Swagger is a specification for documenting REST APIs. It describes the api format including URL, method, and representation to describe REST web services. Swagger is meant to enable the service producer to update the service documentation in real time so that client and documentation systems are moving at the same pace as the server. The methods, parameters, and models description are tightly integrated into the server code, thereby maintaining the synchronization in APIs and its documentation. The specification asks you to include information like:
+
+What are all the operations that your API supports?
+What are your API’s parameters and what does it return?
+Does your API need some authorization?
+And even fun things like terms, contact information and license to use the API.
+
 
 ## Documentation:
  * [OpenFeign link 1](https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/)
