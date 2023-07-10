@@ -1,7 +1,7 @@
 package com.example.personfeign.adpter.in.dto.request;
 
 import lombok.*;
-import org.antlr.v4.runtime.misc.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 @Getter
 @Setter
@@ -13,7 +13,11 @@ public class PersonRequest {
 
     @NotNull
     private String name;
+
+    @NotNull
     private int age;
+
+    @NotNull
     private String country;
 
 }
