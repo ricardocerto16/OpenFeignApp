@@ -21,9 +21,14 @@ Testing at the very end of a development cycle puts enormous strain on QA teams,
 These tests are made to the API to verify if, in case of success or failure of the request, the return of the request is equal to what we expected when developing the code.
 
 
-### Sucessfull Requests
+All tests can be seen when importing the collection into Postman.
 
-* Find All Persons: http://localhost:8080/api/person
+
+OBS: this code must be added in postman in the 'Tests' tab. These tests run when executing the request via Postman.
+
+### Sucessfull Requests Examples
+
+* Find All Persons - (GET) - http://localhost:8080/api/person
 ```
 pm.test("Status test", function () {
     pm.response.to.have.status(200);
@@ -58,6 +63,90 @@ pm.test("Response property matches environment variable", function () {
 
 ```
 
+* Save Person - (POST) - http://localhost:8080/api/person
+
+```
+pm.test("Successful POST request", () => {
+  pm.expect(pm.response.code).to.be.oneOf([200,201,202]);
+});
+
+pm.test("Content-Type header is present", () => {
+  pm.response.to.have.header("Content-Type");
+});
+
+pm.test("Response time is less than 700ms", () => {
+  pm.expect(pm.response.responseTime).to.be.below(700);
+});
 
 
-### Insucessfull Request
+const jsonData = pm.response.json();
+pm.test("Test data type of the response", () => {
+  pm.expect(jsonData).to.be.an("object");
+});
+
+```
+
+### Insucessfull Request Examples
+
+* Error 404 Find Person By ID - (id not exist) - http://localhost:8080/api/person/10000
+
+```
+pm.test("Status test", function () {
+    pm.response.to.have.status(404);
+});
+
+pm.test("Response must be valid and have a body", function () {
+     pm.response.to.be.notFound;
+     pm.response.to.be.withBody;
+     pm.response.to.be.json;
+});
+
+pm.test("Content-Type header is present", () => {
+  pm.response.to.have.header("Content-Type");
+});
+
+pm.test("Response time is less than 700ms", () => {
+  pm.expect(pm.response.responseTime).to.be.below(700);
+});
+
+const jsonData = pm.response.json();
+pm.test("Test data type of the response", () => {
+  pm.expect(jsonData).to.be.an("object");
+  pm.expect(jsonData.code).to.be.a("string");
+  pm.expect(jsonData.message).to.be.a("string");
+});
+
+```
+  
+* Error 400 Save Person (error in JSON Body) - http://localhost:8080/api/person
+
+```
+pm.test("Unsuccessful POST request", () => {
+  pm.response.to.have.status(400);
+});
+
+pm.test("Content-Type header is present", () => {
+  pm.response.to.have.header("Content-Type");
+});
+
+pm.test("Response time is less than 700ms", () => {
+  pm.expect(pm.response.responseTime).to.be.below(700);
+});
+
+pm.test("Response property matches environment variable", function () {
+  pm.expect(pm.response.json().name).to.eql(pm.environment.get("$status"));
+});
+
+
+const jsonData = pm.response.json();
+pm.test("Test data type of the response", () => {
+  pm.expect(jsonData).to.be.an("object");
+});
+
+
+pm.test("Test data type of the response", () => {
+  pm.expect(jsonData).to.be.an("object");
+  pm.expect(jsonData.status).to.be.a("number");
+  pm.expect(jsonData.message).to.be.a("string");
+});
+```
