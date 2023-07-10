@@ -29,6 +29,10 @@ Swagger is a specification for documenting REST APIs. It describes the api forma
 ## What is API test automation? (Via Postman)
 API test automation is the process of using a testing tool to programmatically execute API tests at certain times or frequencies, or in CI/CD pipelines. It is particularly important for agile development teams, as it enables them to maintain fast-paced development cycles while continuously and systematically verifying that their API is working as expected. API test automation helps prevent breaking changes from reaching production, and it is intended to augment—rather than replace—the manual approach. Teams that automate their API tests are able to deliver new features quickly and confidently while conserving developer bandwidth.
 
+
+More detailed information on this topic at the following [link](https://github.com/ricardocerto16/OpenFeignApp/blob/main/Postman/readme.md) with examples from the repository
+
+
 ## Description Simple App Feign:
 
 To consume an external api using spring openfeign we use the
