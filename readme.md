@@ -38,15 +38,15 @@ Swagger is a specification for documenting REST APIs. It describes the api forma
   ### To integrate Swagger with Spring Boot we need to include the following maven dependencies in our pom.xml file.
 ```
 <!-- swagger dependencies -->
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-			<version>2.1.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-validation</artifactId>
-		</dependency>
+<dependency>
+	<groupId>org.springdoc</groupId>
+	<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+	<version>2.1.0</version>
+</dependency>
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
 ```
 
 
