@@ -19,7 +19,7 @@ With this requests :
 * For this app we adopted a hexagonal architecture (help links in the documentation topic
 * The exampleData.txt file that is in the resources already has some inserts in the table to be tested
 * Tests performed on Controller and Service using Mockito
-* Swagger link: http://localhost:8080/swagger-ui/index.html#/
+* Swagger link: http://localhost:8080/swagger-ui/index.html#/  (The project needs to be running to access the link)
 
 
 ### consemeFeign
@@ -35,6 +35,20 @@ Swagger is a specification for documenting REST APIs. It describes the api forma
 - Does your API need some authorization?
 - And even fun things like terms, contact information and license to use the API.
 
+  ### To integrate Swagger with Spring Boot we need to include the following maven dependencies in our pom.xml file.
+```
+<!-- swagger dependencies -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+```
+
 
 ## Documentation:
  * [OpenFeign link 1](https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/)
@@ -44,6 +58,7 @@ Swagger is a specification for documenting REST APIs. It describes the api forma
  * [Unit tests with Mockito](https://www.vogella.com/tutorials/Mockito/article.html)
  * [JUnit 5 tutorial - Learn how to write unit tests](https://www.vogella.com/tutorials/JUnit/article.html)
  * [Integrate JUnit and Mockito, Unit Testing for Controller Layer](https://medium.com/backend-habit/integrate-junit-and-mockito-unit-testing-for-controller-layer-91bb4099c2a5)
+ * 
  
 ## Next Steps: 
 * put apps running in Docker
