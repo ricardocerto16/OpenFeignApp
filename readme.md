@@ -25,6 +25,7 @@ With this requests :
 ### consemeFeign
 * Is a spring app that runs on localhost on port 8081 with the help of DB H2.
 * Using openFeign this app is responsible for making rest requests to the personFeign app and using the data.
+* Swagger link: http://localhost:8081/swagger-ui/index.html#/  (The project needs to be running to access the link)
 
 ## What is Swagger
 
