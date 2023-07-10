@@ -6,8 +6,12 @@ API test automation is the process of using a testing tool to programmatically e
 ## What are some of the benefits of API test automation?
 Like manual API testing, API test automation enables teams to confirm that their API is working as expected. However, it also offers several additional benefits that improve developer workflows and support rapid iteration. By automating API tests, teams can:
 
-* Detect issues as soon as they are introduced
+* Detect issues as soon as they are introduced:
+
+
 Test automation enables developers to surface issues while they work. For instance, teams can configure their CI/CD pipeline to automatically execute API tests after every code push, which provides immediate feedback while the code is still in progress. If the tests identify an issue, the developer can fix it immediately—before it gets deployed to production and causes user-facing issues.
 
 * Save time and resources
+
+  
 Testing at the very end of a development cycle puts enormous strain on QA teams, who are often responsible for vetting every piece of functionality on a tight schedule. This approach requires a significant amount of time and effort, and it can also result in delays as development teams work to fix unexpected issues. Automated API testing distributes the testing load across the API lifecycle, which shortens feedback loops, improves efficiency, and enables teams to bring new features to market as quickly as possible.
