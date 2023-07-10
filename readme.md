@@ -26,7 +26,8 @@ Swagger is a specification for documenting REST APIs. It describes the api forma
 	<artifactId>spring-boot-starter-validation</artifactId>
 </dependency>
 ```
-
+## What is API test automation? (Via Postman)
+API test automation is the process of using a testing tool to programmatically execute API tests at certain times or frequencies, or in CI/CD pipelines. It is particularly important for agile development teams, as it enables them to maintain fast-paced development cycles while continuously and systematically verifying that their API is working as expected. API test automation helps prevent breaking changes from reaching production, and it is intended to augment—rather than replace—the manual approach. Teams that automate their API tests are able to deliver new features quickly and confidently while conserving developer bandwidth.
 
 ## Description Simple App Feign:
 
@@ -63,6 +64,9 @@ With this requests :
  * [JUnit 5 tutorial - Learn how to write unit tests](https://www.vogella.com/tutorials/JUnit/article.html)
  * [Integrate JUnit and Mockito, Unit Testing for Controller Layer](https://medium.com/backend-habit/integrate-junit-and-mockito-unit-testing-for-controller-layer-91bb4099c2a5)
  * [Swagger](https://www.baeldung.com/spring-rest-openapi-documentation)
+ * [Postman - Writting Tests](https://learning.postman.com/docs/writing-scripts/test-scripts/)
+ * [Postman - Test script examples](https://learning.postman.com/docs/writing-scripts/script-references/test-examples/)
+ * [What is API test automation?](https://www.postman.com/api-platform/api-test-automation/)
  
 ## Next Steps: 
 * put apps running in Docker
