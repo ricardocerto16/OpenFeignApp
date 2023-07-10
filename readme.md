@@ -59,7 +59,7 @@ Swagger is a specification for documenting REST APIs. It describes the api forma
  * [Unit tests with Mockito](https://www.vogella.com/tutorials/Mockito/article.html)
  * [JUnit 5 tutorial - Learn how to write unit tests](https://www.vogella.com/tutorials/JUnit/article.html)
  * [Integrate JUnit and Mockito, Unit Testing for Controller Layer](https://medium.com/backend-habit/integrate-junit-and-mockito-unit-testing-for-controller-layer-91bb4099c2a5)
- * 
+ * [Swagger](https://www.baeldung.com/spring-rest-openapi-documentation)
  
 ## Next Steps: 
 * put apps running in Docker
